@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+# Imprime uma mensagem de saldação.
+echo "Kwrite Designer - Version: "
+
+# Imprime a versão
+cat version.txt
+
+# Inicializa o aplicativo.
+npm start

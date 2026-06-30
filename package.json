@@ -1,0 +1,13 @@
+{
+  "name": "kwdesigner",
+  "version": "0.0.1",
+  "main": "main.js",
+
+  "scripts": {
+    "start": "electron . --no-sandbox"
+  },
+
+  "devDependencies": {
+    "electron": "^42.5.1"
+  }
+}
