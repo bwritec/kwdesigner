@@ -23,6 +23,20 @@ if (version_compare(PHP_VERSION, $minPhpVersion, '<')) {
     exit(1);
 }
 
+/**
+     * Caminho do .env (ajuste se necessário)
+     */
+    $envPath = dirname(__DIR__) . '/.env';
+
+    /**
+     * Se não existir .env, redireciona para install.php
+     */
+    if (!file_exists($envPath))
+    {
+        header('Location: install.php');
+        exit;
+    }
+
 /*
  *---------------------------------------------------------------
  * SET THE CURRENT DIRECTORY
